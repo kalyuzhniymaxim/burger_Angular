@@ -37,18 +37,28 @@ body {
   border: 0;
   cursor: pointer;
   outline: none;
-  color:#191411 ;
+  color: #191411;
   font-size: 18px;
 }
 
-.button:hover{
-    background: linear-gradient(96deg, #ac6115 0%, #9e7a19 100%);
+.button:hover {
+  background: linear-gradient(96deg, #ac6115 0%, #9e7a19 100%);
 }
 
-.main{
-    background-image: url('/images/main_bg.png');
-    background-position: top center;
-    overflow: hidden;
+.common-title {
+  text-align: center;
+  font-family: 'Merriweather', sans-serif;
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 80px;
+  letter-spacing: 1.92px;
+  text-transform: uppercase;
+}
+
+.main {
+  background-image: url('../images/main_bg.png');
+  background-position: top center;
+  overflow: hidden;
 }
 
 .header {
@@ -107,7 +117,7 @@ body {
   padding-bottom: 199px;
 }
 .main-content .container {
-    position: relative;
+  position: relative;
 }
 .main-info {
   max-width: 608px;
@@ -134,10 +144,182 @@ body {
 }
 .main-action {
 }
-.button {
-}
+
 .main-image {
-    position: absolute;
-    top: -123px;
-    left: calc(100% -  991px);
+  position: absolute;
+  top: -123px;
+  left: calc(100% - 991px);
+}
+
+.why {
+  background-image: url(../images/whybg.png);
+  background-position: top center;
+  background-size: initial;
+  padding-bottom: 180px;
+}
+
+.why-items {
+  margin-top: 60px;
+  display: grid;
+  gap: 100px;
+  grid-template-columns: repeat(3, 312px);
+  justify-content: center;
+}
+.why-item {
+  text-align: center;
+}
+
+.why-item-title {
+  font-size: 24px;
+  line-height: 29px;
+  padding: 24px 0;
+}
+.why-item-text {
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.products {
+  background-image: url('../images/burgers_bg.png');
+  background-position: top center;
+  background-size: 1400px;
+  padding-bottom: 180px;
+}
+
+.products-items {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, 384px);
+  margin-top: 60px;
+}
+.products-item {
+  background-color: #211a16;
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid #353535;
+}
+.products-item-image {
+  height: 250px;
+}
+.products-item-image img {
+  max-width: 100%;
+}
+.products-item-title {
+  font-size: 24px;
+  line-height: 29px;
+  margin: 24px 0;
+}
+
+.products-item-text {
+  font-size: 16px;
+  line-height: 140%;
+  margin-bottom: 24px;
+}
+.products-item-extra {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products-item-price {
+  font-size: 32px;
+  line-height: 39px;
+  margin-bottom: 8px;
+}
+.products-item-weight {
+  font-size: 16px;
+  line-height: 18px;
+  color: #757575;
+}
+
+.button.product-button {
+  display: flex;
+  justify-content: center;
+  width: 182px;
+  height: 62px;
+}
+
+.button.product-button span:first-child {
+  margin-right: 10px;
+}
+.order {
+  background-image: url('../images/order_bg.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-bottom: 180px;
+  overflow: hidden;
+}
+.order .container {
+  position: relative;
+}
+
+.order-image {
+  position: absolute;
+  top: 0;
+  right: calc(100% - 764px);
+  z-index: -1;
+}
+.order-form {
+  border-radius: 16px;
+  border: 1px solid #353535;
+  background: #211a16;
+  margin-top: 60px;
+  width: 426px;
+  padding: 60px 40px;
+  box-sizing: border-box;
+  margin-left: 674px;
+}
+.order-form-text {
+text-align: center;
+font-family: 'Gilroy';
+font-size: 24px;
+line-height: 29px;
+}
+.order-form-inputs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.order-form-input {
+width: 344px;
+height: 62px;
+background: linear-gradient(95.61deg, #da8023 0%, #e2b438 100%);
+border-radius: 8px;
+margin-bottom: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.order-form-input input{
+padding: 16px 10px;
+background: #211a16;
+border-radius: 8px;
+color: white;
+width: 342px;
+height: 60px;
+box-sizing: border-box;
+outline: none;
+border: 1px solid transparent;
+
+}
+
+.order-form-inputs .button {
+  width: 344px;
+height: 62px;
+}
+
+.footer {
+  padding: 60px 0;
+}
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+}
+.rights {
+  font-size: 16px;
+  line-height: 20px;
 }
